@@ -1,0 +1,28 @@
+{
+  "name": "css-frameworks-ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass styles/scss:styles/css --style compressed",
+    "watch": "sass styles/scss:styles/css --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVHUSA/CSS-frameworks-ca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RVHUSA/CSS-frameworks-ca/issues"
+  },
+  "homepage": "https://github.com/RVHUSA/CSS-frameworks-ca#readme",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
