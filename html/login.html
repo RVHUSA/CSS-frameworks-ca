@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/html/index.html" class="logo">MySocial</a>
+
+      <nav id="desktopMenu" class="bg-primary">
+        <a href="/html/index.html">Register</a>
+        <a href="/html/login.html">Login</a>
+        <a href="/html/feed/index.html">Feed</a>
+        <a href="/html/profile/index.html">Profile</a>
+      </nav>
+
+      <button id="menuToggle">☰ Menu</button>
+
+      <nav id="mobileMenu" class="hidden">
+        <a href="/html/index.html">Register</a>
+        <a href="/html/login.html">Login</a>
+        <a href="/html/feed/index.html">Feed</a>
+        <a href="/html/profile/index.html">Profile</a>
+      </nav>
+    </header>
+
+    <h1>Login</h1>
+
+    <form id="loginForm" action="/profile/index.html" method="GET">
+      <label>
+        Email:
+        <input type="email" name="email" required />
+      </label>
+      <br />
+      <label>
+        Password:
+        <input type="password" name="password" minlength="8" required />
+      </label>
+      <br />
+      <button type="submit">Login</button>
+    </form>
+
+    <p>
+      Don't have an account?
+      <a href="index.html">Register here</a>
+    </p>
+  </body>
+</html>
