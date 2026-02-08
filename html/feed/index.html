@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed</title>
+    <link rel="stylesheet" href="../styles/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">MySocial</a>
+
+      <nav id="desktopMenu">
+        <a href="../index.html">Register</a>
+        <a href="../login.html">Login</a>
+        <a href="../feed/index.html">Feed</a>
+        <a href="../profile/index.html">Profile</a>
+      </nav>
+
+      <button id="menuToggle">☰ Menu</button>
+
+      <nav id="mobileMenu" class="hidden">
+        <a href="../index.html">Register</a>
+        <a href="../login.html">Login</a>
+        <a href="../feed/index.html">Feed</a>
+        <a href="../profile/index.html">Profile</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="feed-controls">
+        <input type="search" placeholder="Search posts..." />
+        <select>
+          <option>Newest</option>
+          <option>Oldest</option>
+          <option>Most liked</option>
+        </select>
+      </section>
+
+      <section class="create-post">
+        <h2>Create post</h2>
+        <form>
+          <input type="text" placeholder="Title" required />
+          <textarea placeholder="What's on your mind?" required></textarea>
+          <input type="url" placeholder="Image URL (optional)" />
+          <button type="submit">Post</button>
+        </form>
+      </section>
+
+      <section class="feed">
+        <article class="post">
+          <img src="https://via.placeholder.com/300" alt="Post image" />
+          <h3>Post title</h3>
+          <p>This is a post body.</p>
+        </article>
+
+        <article class="post">
+          <img src="https://via.placeholder.com/300" alt="Post image" />
+          <h3>Another post</h3>
+          <p>Another post body.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
