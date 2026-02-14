@@ -4,26 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/styles/css/style.css" />
+
+    <!-- Inline styling font-->
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <a href="/html/index.html" class="logo">MySocial</a>
+  <body style="background-color: #fffbf7">
+    <header style="background-color: #fff0e6" class="sticky-top shadow-sm">
+      <div class="container-fluid d-flex align-items-center p-3">
+        <a href="/html/index.html" class="me-auto">
+          <img
+            src="/images/echoes.png"
+            alt="Echoes logo"
+            class="img-fluid"
+            style="height: 100px"
+          />
+        </a>
 
-      <nav id="desktopMenu">
-        <a href="/html/index.html">Register</a>
-        <a href="/html/login.html">Login</a>
-        <a href="/html/feed/index.html">Feed</a>
-        <a href="/html/profile/index.html">Profile</a>
-      </nav>
+        <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
+          <a
+            href="/html/index.html"
+            class="text-decoration-none"
+            style="color: #ff3131"
+            >Register</a
+          >
+          <a
+            href="/html/login.html"
+            class="text-decoration-none"
+            style="color: #ff3131"
+            >Login</a
+          >
+          <a
+            href="/html/feed/index.html"
+            class="text-decoration-none"
+            style="color: #ff3131"
+            >Feed</a
+          >
+          <a
+            href="/html/profile/index.html"
+            class="text-decoration-none"
+            style="color: #ff3131"
+            >Profile</a
+          >
+        </nav>
 
-      <button id="menuToggle">☰ Menu</button>
+        <button
+          id="menuToggle"
+          class="btn d-md-none fs-1 px-3 py-2 me-4"
+          style="color: #ff3131"
+        >
+          ☰
+        </button>
+      </div>
 
-      <nav id="mobileMenu" class="hidden">
-        <a href="/html/index.html">Register</a>
-        <a href="/html/login.html">Login</a>
-        <a href="/html/feed/index.html">Feed</a>
-        <a href="/html/profile/index.html">Profile</a>
+      <nav
+        id="mobileMenu"
+        class="d-none d-flex flex-column align-items-center gap-2 p-3"
+        style="background-color: #fff0e6"
+      >
+        <a
+          href="/html/index.html"
+          class="text-decoration-none py-2"
+          style="color: #ff3131"
+          >Register</a
+        >
+        <a
+          href="/html/login.html"
+          class="text-decoration-none py-2"
+          style="color: #ff3131"
+          >Login</a
+        >
+        <a
+          href="/html/feed/index.html"
+          class="text-decoration-none py-2"
+          style="color: #ff3131"
+          >Feed</a
+        >
+        <a
+          href="/html/profile/index.html"
+          class="text-decoration-none py-2"
+          style="color: #ff3131"
+          >Profile</a
+        >
       </nav>
     </header>
 
@@ -52,5 +127,6 @@
       Already have an account?
       <a href="login.html">Login here</a>
     </p>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
