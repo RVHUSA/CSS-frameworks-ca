@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,27 +102,44 @@
         >
       </nav>
     </header>
+    <main
+      class="container d-flex justify-content-center align-items-center"
+      style="min-height: 80vh"
+    >
+      <div class="bg-white p-5 shadow rounded-2" style="width: 400px">
+        <h1 class="text-center mb-4">Login</h1>
 
-    <h1>Login</h1>
+        <form id="loginForm">
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required />
+          </div>
 
-    <form id="loginForm" action="/profile/index.html" method="GET">
-      <label>
-        Email:
-        <input type="email" name="email" required />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input type="password" name="password" minlength="8" required />
-      </label>
-      <br />
-      <button type="submit">Login</button>
-    </form>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" required />
+          </div>
 
-    <p>
-      Don't have an account?
-      <a href="index.html">Register here</a>
-    </p>
+          <button
+            type="submit"
+            class="btn btn-danger w-100 fw-bold"
+            style="
+              background-color: #ff3131;
+              border-color: #ff3131;
+              transition: 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#ff6666'"
+            onmouseout="this.style.backgroundColor='#ff3131'"
+          >
+            Login
+          </button>
+        </form>
+        <p class="text-center mt-3">
+          Don't have an account?
+          <a href="index.html" class="text-danger">Register here</a>
+        </p>
+      </div>
+    </main>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
