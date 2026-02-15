@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feed</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,58 +14,32 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles/css/style.css" />
-
-    <!-- Inline styling font-->
-    <style>
-      body {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/css/styles.css" />
   </head>
-  <body style="background-color: #fffbf7">
-    <header style="background-color: #fff0e6" class="sticky-top shadow-sm">
+  <body>
+    <header class="sticky-top shadow-sm">
       <div class="container-fluid d-flex align-items-center p-3">
         <a href="/html/index.html" class="me-auto">
           <img
             src="/images/echoes.png"
             alt="Echoes logo"
-            class="img-fluid"
-            style="height: 100px"
+            class="img-fluid logo"
           />
         </a>
 
         <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
-          <a
-            href="/html/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Register</a
-          >
-          <a
-            href="/html/login.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Login</a
-          >
-          <a
-            href="/html/feed/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Feed</a
-          >
-          <a
-            href="/html/profile/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Profile</a
-          >
+          <a href="/html/index.html" class="nav-link-custom">Register</a>
+
+          <a href="/html/login.html" class="nav-link-custom">Login</a>
+
+          <a href="/html/feed/index.html" class="nav-link-custom">Feed</a>
+
+          <a href="/html/profile/index.html" class="nav-link-custom">Profile</a>
         </nav>
 
         <button
           id="menuToggle"
-          class="btn d-md-none fs-1 px-3 py-2 me-4"
-          style="color: #ff3131"
+          class="btn d-md-none menu-toggle fs-1 px-3 py-2 me-4"
         >
           ☰
         </button>
@@ -72,31 +47,15 @@
 
       <nav
         id="mobileMenu"
-        class="d-none d-flex flex-column align-items-center gap-2 p-3"
-        style="background-color: #fff0e6"
+        class="d-none d-flex flex-column align-items-center gap-2 p-3 mobile-menu"
       >
-        <a
-          href="/html/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Register</a
-        >
-        <a
-          href="/html/login.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Login</a
-        >
-        <a
-          href="/html/feed/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Feed</a
-        >
-        <a
-          href="/html/profile/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+        <a href="/html/index.html" class="py-2 nav-link-custom">Register</a>
+
+        <a href="/html/login.html" class="py-2 nav-link-custom">Login</a>
+
+        <a href="/html/feed/index.html" class="py-2 nav-link-custom">Feed</a>
+
+        <a href="/html/profile/index.html" class="py-2 nav-link-custom"
           >Profile</a
         >
       </nav>

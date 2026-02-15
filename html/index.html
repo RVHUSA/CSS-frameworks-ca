@@ -14,58 +14,49 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles/css/style.css" />
-
-    <!-- Inline styling font-->
-    <style>
-      body {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/css/styles.css" />
   </head>
-  <body style="background-color: #fffbf7">
-    <header style="background-color: #fff0e6" class="sticky-top shadow-sm">
+
+  <body>
+    <header class="sticky-top shadow-sm">
       <div class="container-fluid d-flex align-items-center p-3">
         <a href="/html/index.html" class="me-auto">
           <img
             src="/images/echoes.png"
             alt="Echoes logo"
-            class="img-fluid"
-            style="height: 100px"
+            class="img-fluid logo"
           />
         </a>
 
         <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
           <a
             href="/html/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
+            class="nav-link-custom"
             >Register</a
           >
+
           <a
             href="/html/login.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
+            class="nav-link-custom"
             >Login</a
           >
+
           <a
             href="/html/feed/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
+            class="nav-link-custom"
             >Feed</a
           >
+
           <a
             href="/html/profile/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
+            class="nav-link-custom"
             >Profile</a
           >
         </nav>
 
         <button
           id="menuToggle"
-          class="btn d-md-none fs-1 px-3 py-2 me-4"
-          style="color: #ff3131"
+          class="btn d-md-none menu-toggle fs-1 px-3 py-2 me-4"
         >
           ☰
         </button>
@@ -73,43 +64,38 @@
 
       <nav
         id="mobileMenu"
-        class="d-none d-flex flex-column align-items-center gap-2 p-3"
-        style="background-color: #fff0e6"
+        class="d-none d-flex flex-column align-items-center gap-2 p-3 mobile-menu"
       >
         <a
           href="/html/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+          class="py-2 nav-link-custom"
           >Register</a
         >
+
         <a
           href="/html/login.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+          class="py-2 nav-link-custom"
           >Login</a
         >
+
         <a
           href="/html/feed/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+          class="py-2 nav-link-custom"
           >Feed</a
         >
+
         <a
           href="/html/profile/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+          class="py-2 nav-link-custom"
           >Profile</a
         >
       </nav>
     </header>
+
     <main
-      class="container d-flex justify-content-center align-items-start py-5"
-      style="min-height: 80vh"
+      class="container d-flex justify-content-center align-items-start py-5 register-main"
     >
-      <div
-        class="bg-white p-5 p-md-5 shadow rounded-2 w-100"
-        style="max-width: 400px"
-      >
+      <div class="bg-white p-5 p-md-5 shadow rounded-2 w-100 register-card">
         <h1 class="text-center mb-4">Register</h1>
 
         <form id="registerForm">
@@ -125,6 +111,7 @@
 
           <div class="mb-3">
             <label class="form-label">Password</label>
+
             <input
               type="password"
               class="form-control"
@@ -136,10 +123,7 @@
 
           <button
             type="submit"
-            class="btn btn-danger w-100 fw-bold rounded-3 shadow-sm"
-            style="transition: 0.3s"
-            onmouseover="this.style.backgroundColor='#ff6666'"
-            onmouseout="this.style.backgroundColor='#ff3131'"
+            class="btn btn-echoes w-100 fw-bold""
           >
             Register
           </button>

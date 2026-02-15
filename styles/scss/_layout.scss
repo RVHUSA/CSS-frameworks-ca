@@ -1,0 +1,43 @@
+@use "variables" as *;
+@use "sass:color";
+
+body {
+  font-family: $font-family-base;
+  background: $background;
+}
+
+main {
+  background: $background;
+  color: $text;
+  min-height: 100vh;
+}
+
+.register-main {
+  min-height: 80vh;
+}
+
+/* Header */
+header {
+  background: $secondary;
+}
+
+header .container-fluid {
+  height: 80px;
+}
+
+.logo {
+  height: 100px;
+  padding: 20px 10px;
+}
+
+/* Nav-links */
+.nav-link-custom {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: color.adjust($primary, $lightness: -20%);
+    text-decoration: none;
+  }
+}
