@@ -14,5 +14,32 @@
 }
 
 .menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
   color: $primary;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 1.5rem;
+  }
+}
+
+.profile-follow-btn {
+  padding: 0.35rem 1.2rem;
+  font-size: 0.9rem;
+  background: $primary;
+  color: white;
+  border: none;
+  @include rounded;
+  @include button-base;
+
+  &:hover {
+    background: color.adjust($primary, $lightness: 10%);
+  }
 }

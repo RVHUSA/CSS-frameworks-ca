@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/ico" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,122 +14,209 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles/css/style.css" />
-
-    <!-- Inline styling font-->
-    <style>
-      body {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/css/styles.css" />
   </head>
-  <body style="background-color: #fffbf7">
-    <header style="background-color: #fff0e6" class="sticky-top shadow-sm">
+  <body>
+    <header class="sticky-top shadow-sm">
       <div class="container-fluid d-flex align-items-center p-3">
         <a href="/html/index.html" class="me-auto">
           <img
             src="/images/echoes.png"
             alt="Echoes logo"
-            class="img-fluid"
-            style="height: 100px"
+            class="img-fluid logo"
           />
         </a>
 
         <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
-          <a
-            href="/html/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Register</a
-          >
-          <a
-            href="/html/login.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Login</a
-          >
-          <a
-            href="/html/feed/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Feed</a
-          >
-          <a
-            href="/html/profile/index.html"
-            class="text-decoration-none"
-            style="color: #ff3131"
-            >Profile</a
-          >
+          <a href="/html/index.html" class="nav-link-custom">Register</a>
+
+          <a href="/html/login.html" class="nav-link-custom">Login</a>
+
+          <a href="/html/feed/index.html" class="nav-link-custom">Feed</a>
+
+          <a href="/html/profile/index.html" class="nav-link-custom">Profile</a>
         </nav>
 
-        <button
-          id="menuToggle"
-          class="btn d-md-none fs-1 px-3 py-2 me-4"
-          style="color: #ff3131"
-        >
+        <button id="menuToggle" class="menu-toggle d-md-none fs-1 px-3 py-2">
           ☰
         </button>
       </div>
 
       <nav
         id="mobileMenu"
-        class="d-none d-flex flex-column align-items-center gap-2 p-3"
-        style="background-color: #fff0e6"
+        class="d-none d-flex flex-column align-items-center gap-2 p-3 mobile-menu"
       >
-        <a
-          href="/html/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Register</a
-        >
-        <a
-          href="/html/login.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Login</a
-        >
-        <a
-          href="/html/feed/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
-          >Feed</a
-        >
-        <a
-          href="/html/profile/index.html"
-          class="text-decoration-none py-2"
-          style="color: #ff3131"
+        <a href="/html/index.html" class="py-2 nav-link-custom">Register</a>
+
+        <a href="/html/login.html" class="py-2 nav-link-custom">Login</a>
+
+        <a href="/html/feed/index.html" class="py-2 nav-link-custom">Feed</a>
+
+        <a href="/html/profile/index.html" class="py-2 nav-link-custom"
           >Profile</a
         >
       </nav>
     </header>
 
-    <main>
-      <section class="profile-header">
-        <img src="https://via.placeholder.com/150" alt="Profile image" />
-        <h1>Username</h1>
-        <button>Follow</button>
+    <main class="container py-4">
+      <section class="profile-header mb-5">
+        <img
+          src="https://ui-avatars.com/api/?name=U+S&background=eee&color=555&size=128"
+          alt="Profile image"
+          class="rounded-circle shadow-sm profile-avatar"
+        />
 
-        <div class="profile-stats">
-          <span>10 Posts</span>
-          <span>120 Followers</span>
-          <span>80 Following</span>
+        <div class="profile-header-info">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <h1 class="h4 fw-bold mb-0">Username</h1>
+            <button class="profile-follow-btn ms-md-3">Follow</button>
+          </div>
+
+          <div class="d-flex gap-3 text-stats">
+            <span><strong>10</strong> Posts</span>
+            <span><strong>120</strong> Followers</span>
+            <span><strong>80</strong> Following</span>
+          </div>
         </div>
       </section>
 
       <section class="profile-posts">
-        <h2>User posts</h2>
+        <h2 class="fw-bold mb-4 text-center">User Posts</h2>
 
-        <article class="post">
-          <img src="https://via.placeholder.com/300" />
-          <h3>My first post</h3>
-        </article>
+        <div class="row g-3 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">My first post</h3>
+                <p>Text to my first post</p>
+              </div>
+            </div>
+          </div>
 
-        <article class="post">
-          <img src="https://via.placeholder.com/300" />
-          <h3>Another post</h3>
-        </article>
-      </section>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Another post</h3>
+                <p>Text to my other post</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Another post</h3>
+                <p>Text to my other post</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Another post</h3>
+                <p>Text to my other post</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Another post</h3>
+                <p>Text to my other post</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-3">
+              <svg
+                class="post-img-placeholder"
+                width="100%"
+                height="250"
+                xmlns="http://www.w3.or/2000/svg"
+                role="img"
+                aria-label="post img placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Another post</h3>
+                <p>Text to my other post</p>
+              </div>
+            </div>
+          </div>
     </main>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

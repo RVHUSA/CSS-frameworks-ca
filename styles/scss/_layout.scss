@@ -1,6 +1,8 @@
 @use "variables" as *;
 @use "sass:color";
+@use "mixins" as *;
 
+/* Body & Main */
 body {
   font-family: $font-family-base;
   background: $background;
@@ -10,10 +12,6 @@ main {
   background: $background;
   color: $text;
   min-height: 100vh;
-}
-
-.register-main {
-  min-height: 80vh;
 }
 
 /* Header */
@@ -39,5 +37,66 @@ header .container-fluid {
   &:hover {
     color: color.adjust($primary, $lightness: -20%);
     text-decoration: none;
+  }
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: $profile-avatar-size;
+  height: $profile-avatar-size;
+  border-radius: 50%;
+  @include object-cover;
+}
+
+.profile-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .text-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* Profile Posts */
+.profile-posts,
+.feed {
+  margin-top: 6rem;
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+  .profile-header {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .profile-header-info {
+    align-items: flex-start;
+  }
+
+  .profile-header-info .text-stats {
+    justify-content: flex-start;
   }
 }
