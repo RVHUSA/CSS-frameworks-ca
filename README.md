@@ -41,5 +41,7 @@ Specifically, AI was used to:
 
 ## Repository
 
-- All work is done on the `css-frameworks` branch.
+- All work is done on css-frameworks branch (except README and Bootstrap/Sass setup on main).
+
+
 
