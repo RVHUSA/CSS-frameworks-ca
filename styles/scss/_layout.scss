@@ -1,0 +1,152 @@
+@use "variables" as *;
+@use "sass:color";
+@use "mixins" as *;
+
+/* Body & Main */
+body {
+  font-family: $font-family-base;
+  background: $background;
+}
+
+main {
+  background: $background;
+  color: $text;
+  min-height: 100vh;
+}
+
+/* Main header */
+header {
+  background: $secondary;
+}
+
+header .container-fluid {
+  height: 80px;
+}
+
+.logo {
+  height: 100px;
+  padding: 20px 10px;
+}
+
+/* Nav-links */
+.nav-link-custom {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: color.adjust($primary, $lightness: -20%);
+    text-decoration: none;
+  }
+}
+
+/* Footer */
+.footer {
+  background: $secondary; 
+  text-align: center;
+
+  .footer-logo {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .footer-nav {
+    a {
+      @extend .nav-link-custom; 
+      font-weight: 500;
+    }
+  }
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: $profile-avatar-size;
+  height: $profile-avatar-size;
+  border-radius: 50%;
+  @include object-cover;
+}
+
+.profile-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .text-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* Profile Posts */
+.profile-posts {
+  margin-top: 6rem;
+}
+
+/* Feed */
+.feed-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feed {
+  margin-top: 2rem;
+}
+
+.feed .form-control,
+.card-body {
+  background: white;
+}
+
+/* Create post */
+.card-create-post .form-control {
+  padding: 0.75rem 1rem;
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+  // Profile Header
+  .profile-header {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .profile-header-info {
+    align-items: flex-start;
+  }
+
+  .profile-header-info .text-stats {
+    justify-content: flex-start;
+  }
+
+  // Feed
+  .feed-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feed-controls select {
+    max-width: 200px;
+  }
+}

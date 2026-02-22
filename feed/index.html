@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../styles/css/styles.css">
+  </head>
+  <body>
+    <header class="sticky-top shadow-sm">
+      <div class="container-fluid d-flex align-items-center p-3">
+        <a href="../index.html" class="me-auto">
+          <img
+            src="../images/echoes.png"
+            alt="Echoes logo"
+            class="img-fluid logo"
+            >
+        </a>
+
+        <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
+          <a href="../index.html" class="nav-link-custom">Register</a>
+
+          <a href="../login.html" class="nav-link-custom">Login</a>
+
+          <a href="index.html" class="nav-link-custom">Feed</a>
+
+          <a href="../profile/index.html" class="nav-link-custom">Profile</a>
+        </nav>
+
+        <button id="menuToggle" class="menu-toggle d-md-none fs-1 px-3 py-2">
+          ☰
+        </button>
+      </div>
+
+      <nav
+        id="mobileMenu"
+        class="d-none d-flex flex-column align-items-center gap-2 p-3 mobile-menu"
+      >
+        <a href="../index.html" class="py-2 nav-link-custom">Register</a>
+
+        <a href="../login.html" class="py-2 nav-link-custom">Login</a>
+
+        <a href="index.html" class="py-2 nav-link-custom">Feed</a>
+
+        <a href="../profile/index.html" class="py-2 nav-link-custom"
+          >Profile</a
+        >
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="create-post mt-5">
+        <div class="card-create-post">
+          <h2 class="text-center mb-4">Create post</h2>
+          <form id="createPostForm">
+            <div class="mb-3">
+              <label class="form-label">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                required
+                >
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Content</label>
+              <textarea
+                class="form-control"
+                placeholder="What's on your mind?"
+                required
+                >
+              </textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Image URL (optional)</label>
+              <input
+                type="url"
+                class="form-control"
+                placeholder="Image URL (optional)"
+              >
+            </div>
+            <button type="submit" class="btn btn-echoes w-100 fw-bold">
+              Post
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="feed py-5">
+        <h2 class="fw-bold mb-5 text-center">Feed</h2>
+
+        <div class="feed-controls mb-4">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Search posts..."
+          >
+          <select class="form-select">
+            <option selected disabled>Sort by</option>
+            <option>Newest</option>
+            <option>Oldest</option>
+            <option>Most liked</option>
+          </select>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-4">
+      <div class="container d-flex flex-column align-items-center">
+        <a href="../index.html" class="mb-3">
+          <img src="../images/echoes.png" alt="Echoes logo" class="footer-logo">
+        </a>
+        <nav class="footer-nav d-flex gap-3 mb-3">
+          <a href="../index.html" class="nav-link-custom">Register</a>
+          <a href="../login.html" class="nav-link-custom">Login</a>
+          <a href="index.html" class="nav-link-custom">Feed</a>
+          <a href="../profile/index.html" class="nav-link-custom">Profile</a>
+        </nav>
+        <p class="text-muted small mb-0">&copy; 2026 Echoes. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
