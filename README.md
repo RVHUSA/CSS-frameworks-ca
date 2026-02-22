@@ -1,6 +1,6 @@
 # Echoes
 
-Echoes is a small social media web app project with the motto: *"what stays after"*.  
+Echoes is a small social media project with the motto: *"what stays after"*.  
 The motto reflects the idea that posts, interactions, and impressions on social media leave a lasting mark, even after the moment has passed.
 
 ## Project Overview
@@ -42,6 +42,7 @@ Specifically, AI was used to:
 ## Repository
 
 - All work is done on css-frameworks branch (except README and Bootstrap/Sass setup on main).
+
 
 
 
