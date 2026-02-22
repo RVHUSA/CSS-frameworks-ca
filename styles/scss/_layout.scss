@@ -77,8 +77,7 @@ header .container-fluid {
 }
 
 /* Profile Posts */
-.profile-posts,
-.feed {
+.profile-posts {
   margin-top: 6rem;
 }
 
@@ -87,6 +86,20 @@ header .container-fluid {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.feed {
+  margin-top: 2rem;
+}
+
+.feed .form-control,
+.card-body {
+  background: white;
+}
+
+/* Create post */
+.card-create-post .form-control {
+  padding: 0.75rem 1rem;
 }
 
 /* Media Queries for Desktop */
@@ -113,10 +126,6 @@ header .container-fluid {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .feed-controls input {
-    max-width: 400px;
   }
 
   .feed-controls select {
