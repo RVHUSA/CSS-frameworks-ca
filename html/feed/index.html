@@ -58,10 +58,15 @@
       </nav>
     </header>
 
-    <main>
-      <section class="feed-controls">
-        <input type="search" placeholder="Search posts..." />
-        <select>
+    <main class="container py-4">
+      <section class="feed-controls mb-4">
+        <input
+          type="search"
+          class="form-control rounded-pill"
+          placeholder="Search posts..."
+        />
+        <select class="form-select">
+          <option selected disabled>Sort by</option>
           <option>Newest</option>
           <option>Oldest</option>
           <option>Most liked</option>
@@ -78,18 +83,142 @@
         </form>
       </section>
 
-      <section class="feed">
-        <article class="post">
-          <img src="https://via.placeholder.com/300" alt="Post image" />
-          <h3>Post title</h3>
-          <p>This is a post body.</p>
-        </article>
+      <section class="feed py-5">
+        <h2 class="fw-bold mb-5 text-center">Feed</h2>
 
-        <article class="post">
-          <img src="https://via.placeholder.com/300" alt="Post image" />
-          <h3>Another post</h3>
-          <p>Another post body.</p>
-        </article>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100">
+              <svg
+                class="card-img"
+                width="100%"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="thumbnail placeholder"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Post Image</title>
+                <rect width="100%" height="100%" fill="#f5f3f2"></rect>
+              </svg>
+              <div class="card-body">
+                <h3 class="h6 fw-bold mt-2 mb-0">Post title</h3>
+                <p>This is a post body.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="/js/main.js"></script>
