@@ -29,7 +29,7 @@ The project includes four main pages:
 
 ## AI Assistance
 
-AI (ChatGPT) was used alongside the module to help explain concepts and show examples of how things can be done for better understanding.  
+AI (ChatGPT) was used alongside the modules to provide more detailed explanations of concepts, improve my understanding, and help resolve issues that arose during the process. This contributed to a deeper understanding and allowed me to learn a great deal throughout the project.
 
 Specifically, AI was used to:
 
@@ -42,3 +42,4 @@ Specifically, AI was used to:
 ## Repository
 
 - All work is done on the `css-frameworks` branch.
+
