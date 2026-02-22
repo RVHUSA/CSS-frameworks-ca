@@ -10,7 +10,7 @@ The project includes four main pages:
 ### Authentication Pages (`index.html`) and (`login.html`) 
 - HTML form validation is included.
 - Password must be at least 8 characters long.
-- The form points to `html/profile/index.html` on submission.
+- The form points to `profile/index.html` on submission.
 
 ### Feed Page (`feed/index.html`)
 - Displays a list of posts with thumbnails.
@@ -42,6 +42,7 @@ Specifically, AI was used to:
 ## Repository
 
 - All work is done on css-frameworks branch (except README and Bootstrap/Sass setup on main).
+
 
 
 
