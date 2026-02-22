@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="../images/favicon.ico" type="image/ico">
+    <title>Register</title>
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,27 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
   </head>
+
   <body>
     <header class="sticky-top shadow-sm">
       <div class="container-fluid d-flex align-items-center p-3">
-        <a href="../index.html" class="me-auto">
+        <a href="index.html" class="me-auto">
           <img
-            src="../images/echoes.png"
+            src="images/echoes.png"
             alt="Echoes logo"
             class="img-fluid logo"
           >
         </a>
 
         <nav id="desktopMenu" class="d-none d-md-flex gap-4 me-4">
-          <a href="../index.html" class="nav-link-custom">Register</a>
+          <a href="index.html" class="nav-link-custom">Register</a>
 
-          <a href="/html/login.html" class="nav-link-custom">Login</a>
+          <a href="html/login.html" class="nav-link-custom">Login</a>
 
-          <a href="/html/feed/index.html" class="nav-link-custom">Feed</a>
+          <a href="html/feed/index.html" class="nav-link-custom">Feed</a>
 
-          <a href="/html/profile/index.html" class="nav-link-custom">Profile</a>
+          <a href="html/profile/index.html" class="nav-link-custom">Profile</a>
         </nav>
 
         <button id="menuToggle" class="menu-toggle d-md-none fs-1 px-3 py-2">
@@ -45,22 +46,30 @@
         id="mobileMenu"
         class="d-none d-flex flex-column align-items-center gap-2 p-3 mobile-menu"
       >
-        <a href="../index.html" class="py-2 nav-link-custom">Register</a>
+        <a href="index.html" class="py-2 nav-link-custom">Register</a>
 
-        <a href="/html/login.html" class="py-2 nav-link-custom">Login</a>
+        <a href="html/login.html" class="py-2 nav-link-custom">Login</a>
 
-        <a href="/html/feed/index.html" class="py-2 nav-link-custom">Feed</a>
+        <a href="html/feed/index.html" class="py-2 nav-link-custom">Feed</a>
 
-        <a href="/html/profile/index.html" class="py-2 nav-link-custom"
+        <a href="html/profile/index.html" class="py-2 nav-link-custom"
           >Profile</a
         >
       </nav>
     </header>
-    <main class="container d-flex justify-content-center align-items-center">
-      <div class="login-card bg-white p-5 shadow rounded-3">
-        <h1 class="text-center mb-4">Login</h1>
 
-        <form id="loginForm" action="../html/profile/index.html" method="GET">
+    <main
+      class="container d-flex justify-content-center align-items-start mt-5"
+    >
+      <div class="register-card bg-white mt-5 p-5 shadow rounded-3">
+        <h1 class="text-center mb-4">Register</h1>
+
+        <form id="registerForm" action="html/profile/index.html" method="GET">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" name="username" required>
+          </div>
+
           <div class="mb-3">
             <label class="form-label">Email</label>
             <input type="email" name="email" class="form-control" required>
@@ -73,20 +82,21 @@
               name="password"
               class="form-control"
               minlength="8"
-              required
-            >
+              required>
           </div>
 
           <button type="submit" class="btn btn-echoes w-100 fw-bold">
-            Login
+            Register
           </button>
         </form>
+
         <p class="text-center mt-3">
-          Don't have an account?
-          <a href="../index.html" class="text-danger">Register here</a>
+          Already have an account?
+          <a href="html/login.html" class="text-danger">Login here</a>
         </p>
       </div>
     </main>
-    <script type="module" src="../js/main.js"></script>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
